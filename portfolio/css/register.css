@@ -1,0 +1,142 @@
+/* Registeration styles */
+@font-face {
+    font-family: urbanist;
+    src: url(../fonts/urbanist_thin.ttf);
+  }
+  body,h2,h1,h3,h4,p,a,span,h6,h5{
+    font-family: 'urbanist', sans-serif;
+}
+
+
+html, body{
+    width: 100%;
+    height: 100%;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/mybg2.jpg');
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+    background-position: center;
+    background-size: cover;
+    backdrop-filter: blur(50px);
+}
+
+.register-content{
+    background: rgba(255, 255, 255, 0.2);
+    background-position: center;
+    backdrop-filter: blur(4px);
+    min-height: 100vh;
+    width: 100%;
+}
+.register-text{
+    text-align: left;
+    color: white;
+}
+
+.learning-title{
+    font-size: 50px;
+}
+.learning-subtitle{
+    font-size: 40px;
+}
+.learn-form{
+    border-radius: 15px;
+    width: 75%;
+    margin: auto;
+    height: 65vh;
+    padding: 1%;
+}
+.lr-input,.member-input{
+    border: none;
+    border-bottom: 1px solid lightgrey;
+    width: 80%;    
+    padding: .5%;
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    transition: width ease 0.3s;
+}
+.lr-select,.member-field{
+    border: 1px solid lightgrey;
+    padding: 1%;
+    width: 80%;    
+    outline: none;
+    margin-left: auto;
+    margin-right: auto;
+    transition: width ease 0.3s;
+    border-radius: 8px;
+}
+.lr-input:focus, .lr-select:focus,.member-input:focus, .member-field:focus{
+    width: 95%;
+}
+.lr-submit-btn,.mf-submit-btn{
+    width: 80%;
+    padding:10px;
+    border: none;
+    border-radius: 10px;
+}
+.r-join-btn,.r-learn-btn{
+    padding:10px 20px;
+    border-radius: 10px;
+    border: 1px solid white;
+    color:white;
+}
+
+.prompt-message{
+    width: 100%;
+    height: 100vh;
+    padding: 4%;
+}
+.prompt-content{
+    margin-top: 40vh;
+}
+
+.learn-courses-btn,.membership-btn{
+    padding:10px 40px ;
+    border-radius: 30px;
+    background: transparent;
+    border: 1px solid grey;
+    font-size: large;
+    transition: transform ease 0.2s;
+   
+}
+.learn-courses-btn:hover,.membership-btn:hover{
+    transform: scale(1.15);
+}
+.learn-courses-btn{
+    margin-right: 30px;
+}
+@media screen and (max-width:767px)  {
+    .register-content{
+        background:white;
+    }
+    .register-text{
+        text-align: center;
+        color: grey;
+    }
+    .learning-title{
+        font-size: 30px;
+    }
+    .learn-form{
+        width: 100%;
+    }
+    .lr-select,.lr-input,.member-input,.member-field{
+        width: 95%;
+    }
+    .lr-select:focus,.lr-input:focus,.member-input:focus,.member-field:focus{
+        width: 100%;
+    }
+    .lr-submit-btn,.mf-submit-btn{
+        width: 95%;
+    }
+}
+
+@media screen and (max-width:442px) {
+    .learn-courses-btn{
+        margin-right:0px;
+        margin-bottom: 10px;
+    }
+
+}
+
+#bootcamp-reg-section, #membership-section{
+    display: none;
+}
